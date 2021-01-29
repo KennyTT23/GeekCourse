@@ -18,7 +18,7 @@ public class HomeWork {
 
         boolean right = true;
 
-        countNumbers();
+        countNumbers(2.5F, 7.3F, 9.4F, 10.5F );
 
         checkTheRange(6,10);
 
@@ -28,24 +28,16 @@ public class HomeWork {
 
         greetNewcomers("John");
 
-        checkTheYear(41);
+        checkTheYear(300);
     }
     // task 3...
-    public static float countNumbers(){
-        float a = 2.5F;
-        float b = 7.3F;
-        float c = 9.4F;
-        float d = 10.5F;
-
+    public static float countNumbers(float a, float b, float c, float d){
         return a*(b+(c/d));
     }
     // task 4...
     public static boolean checkTheRange(int a, int b){
-        if ((a+b) >= 10 && (a+b) <= 20){
-            return true;
-        }else{
-            return false;
-        }
+        int sum = a + b;
+        return (sum >= 10 && sum <= 20);
     }
     // task 5...
     public static String checkPosOrNeg(int num){
@@ -57,24 +49,22 @@ public class HomeWork {
     }
     //task 6...
     public static boolean checkPosNeg(int num){
-        if (num < 0){
-            return true;
-        }else{
-            return false;
-        }
+        return (num < 0);
     }
+
     // task 7...
     public static void greetNewcomers(String name){
+
         System.out.println("Привет, " + name + "!");
     }
     // task 8...
     public static void checkTheYear(int year){
-        if(year % 100 == 0 && year % 400 == 0 ){
+        if(year % 400 == 0 ){
             System.out.println("Високосный год.");
-        }else if (year % 4 == 0){
-            System.out.println("Високосный год.");
-        }else {
+        }else if (year % 100 == 0){
             System.out.println("Не високосный год.");
+        }else {
+            System.out.println("Високосный год.");
         }
     }
 }

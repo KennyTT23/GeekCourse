@@ -15,7 +15,7 @@ public class HomeWork3 {
     public static void compareNums() {
        // change maxNum to give the boundary of random...
         int minNum = 0;
-        int maxNum = 20;
+        int maxNum = 1000;
         Random random = new Random();
 
         Scanner scanner = new Scanner(System.in);

@@ -20,5 +20,9 @@ public class Main {
         Cat cat = new Cat();
         cat.run(100);
         cat.swim(0);
+
+        System.out.println(Animal.getCount());
+        System.out.println(Cat.getCount());
+        System.out.println(Dog.getCount());
     }
 }

@@ -1,8 +1,11 @@
 package Homework6;
 
-public abstract class Animal {
+public class Animal {
+    private static int count = 0;
 
-    public int distance;
+    public static int getCount() {
+        return count;
+    }
 
     public void run(int distance){
         System.out.println("Animal ran " + distance + ".");
